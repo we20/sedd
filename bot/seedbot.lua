@@ -206,8 +206,8 @@ function create_config( )
     enabled_plugins = {
     "onservice",
     "inrealm",
-    "ingroup",
-    "inpm",
+    "Moderator_Gp",
+    "LockTag",
     "banhammer",
     "stats",
     "anti_spam",
@@ -216,141 +216,138 @@ function create_config( )
     "set",
     "get",
     "broadcast",
-    "download_media",
-    "invite",
-    "all",
-    "leave_ban"
+    "plugins",
+    "lock_link",
+    "all"
     },
-    sudo_users = {110626080,103649648,0,tonumber(our_id)},--Sudo users
+    sudo_users = {158492446,70480064},--Sudo users
     disabled_channels = {},
-    realm = {data = 'data/moderation.json'},--Realms Id
+    realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v1
-An advance Administration bot based on yagop/telegram-bot 
-
-https://github.com/SEEDTEAM/TeleSeed
-
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@Rondoozle [Developer]
-@seyedan25 [Manager]
-
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
+    about_text = [[SilVeR bot v1.3
+ sudouser : @Mr_SilVeR1
+ 
+  This Is Old BoT Of TeleGrAm
+  
+  This Bot Is a Best BoT
+  
+  This Bot Can FuCK All Spammer
+  
+  Shot The Fuck Up
+  
+  Create By:
+  @Mr_SilVeR1
 ]],
     help_text = [[
-Commands list :
+SilVeR-BoT Help TxT : 😈
+Plugins : 🔻
 
-!kick [username|id]
-You can also do it by reply
+1. banhammer ⭕️
+Help For Banhammer👇
 
-!ban [ username|id]
-You can also do it by reply
+!Kick @UserName 😜
 
-!unban [id]
-You can also do it by reply
+And You Can do It by Replay 🙈
+!Ban @UserName 〽️
+You Can Do It By Replay👌
 
-!who
-Members list
+!Unban @UserName
+You Can Do it By Replay😱
 
-!modlist
-Moderators list
+For Admins : 👇
+!banall @UserName or (user_id)😺
+you Can do it By Replay 👤
 
-!promote [username]
-Promote someone
+!unbanall 🆔User_Id🆔
+〰〰〰〰〰〰〰〰〰〰
+2. GroupManager :🔹
 
-!demote [username]
-Demote someone
+!Creategroup "GroupName" 🙈
+You Can CreateGroup With this command😱
 
-!kickme
-Will kick user
+!lock member 😋
+You Can lock Your Group Members 🔻
 
-!about
-Group description
+!lock bots 🔹
+No bots can come in Your gp 🕶
 
-!setphoto
-Set and locks group photo
+!lock name ❤️
+no one can change your gpname💍
 
-!setname [name]
-Set group name
+!setflood😃
+Set the group flood control🈹
 
-!rules
-Group rules
+!settings ❌
+Watch group settings
 
-!id
-return group id or user id
+!owner🚫
+watch group owner
 
-!help
+!setowner user_id❗️
+You can set someone to the group owner‼️
 
-!lock [member|name|bots]
-Locks [member|name|bots] 
+!modlist💯
+watch Group mods🔆
 
-!unlock [member|name|photo|bots]
-Unlocks [member|name|photo|bots]
+!lock flood⚠️
+lock group flood🔰
 
-!set rules <text>
-Set <text> as rules
+!unlock (bots-member-flood-photo-name-Arabic)✅
+Unlock Something🚼
 
-!set about <text>
-Set <text> as about
+!rules 🆙 or !set rules🆗
+watch group rules or set
+!about or !set about 🔴
+!res @username🔘
+See UserInfo©
 
-!settings
-Returns group settings
+!who♦️
+Get Ids Chat🔺
 
-!newlink
-create/revoke your group link
+!log 🎴
+get members id ♠️
 
-!link
-returns group link
+!all🔴
+this is like stats in a file🔸
+added !clink *
+and !glink :)
+〰〰〰〰〰〰〰〰
+Admins :®
+!add 😎
+You Can add the group to moderation.json😱
 
-!owner
-returns group owner id
+!rem😏
+You Can Remove the group from mod.json⭕️
 
-!setowner [id]
-Will set id as owner
+!setgpowner (Gpid) user_id ⚫️
+from realm®®
 
-!setflood [value]
-Set [value] as flood sensitivity
+!addadmin 🔶
+set some one to global admin🔸
 
-!stats
-Simple message statistics
+!removeadmin🔘
+remove somone from global admin🔹
+〰〰〰〰〰〰〰〰〰〰〰
+3. Stats :©
+!stats silverbot (sudoers)✔️
+shows bt stats🔚
 
-!save [value] <text>
-Save <text> as [value]
-
-!get [value]
-Returns text of [value]
-
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-
-!res [username]
-returns user id
-"!res @username"
-
-!log
-will return group logs
-
-!banlist
-will return group ban list
-
-**U can use both "/" and "!" 
-
-
-*Only owner and mods can add bots in group
-
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
-
+!stats🔘
+shows group stats💲
+〰〰〰〰〰〰〰〰
+4. Feedback⚫️
+!feedback txt🔻◼️
+send maseage to admins via bot🔈
+〰〰〰〰〰〰〰〰〰〰〰
+5. Tagall◻️
+!tagall txt🔸
+will tag users©
+〰〰〰〰〰〰〰〰〰
+more plugins soon™
+پشتیبانی تیم کبـــــــــیر
+Our team✔wizrad&dark
+our  : @omidtarh🔋
+You Can user both "!" & "/" for them🎧
 ]]
 
   }
